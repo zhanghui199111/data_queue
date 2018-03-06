@@ -14,7 +14,6 @@ class GetRedisData(object):
 
     def __new__(cls, *args, **kw):
         if not cls._instance:
-            # cls._instance = super(GetRedisData, cls).__new__(cls, *args, **kw)  # mac or linux
             cls._instance = super(GetRedisData, cls).__new__(cls)  # windows
         return cls._instance
 
