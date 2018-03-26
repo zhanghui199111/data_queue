@@ -36,9 +36,6 @@ class RedisQueue(object):
     def insert_data(self, value):
         self.queue_redis.lpush(self.data_queue, json.dumps(value))
 
-    def get_data_len(self):
-        return self.queue_redis.llen(self.data_queue)
-
     def pop_data(self):
         if not self.queue_redis.exists(self.data_queue):
             # logger.info("data_queue do not exists!")
