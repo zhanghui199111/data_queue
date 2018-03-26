@@ -211,5 +211,3 @@ CELERYBEAT_SCHEDULE = {
     }
 }
 ```
-### 五、代码
-> [https://github.com/zhanghui199111/data_queue](https://github.com/zhanghui199111/data_queue)
