@@ -38,7 +38,6 @@ class RedisQueue(object):
 
     def pop_data(self):
         if not self.queue_redis.exists(self.data_queue):
-            # logger.info("data_queue do not exists!")
             return None, None
         else:
             value_str = self.queue_redis.rpop(self.data_queue)
